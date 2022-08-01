@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Roboto:wght@400;600;700&family=Old+Standard+TT&display=swap');
+
+$fonts: (
+  'primary': ('Archivo',
+    'Roboto'
+  ),
+  'title': ("Old Standard TT"
+  )
+);
+
+$font-primary: map-get($map: $fonts, $key: 'primary');
+$font-title: map-get($map: $fonts, $key: 'title');
+
+// Colors
+$colors: (
+  'white': #ffffff,
+  'light': #f9f9f9,
+  'dark': #222222,
+  'high-dark': #333333,
+  'beige': #BDAC8D,
+  'high-beige':#BEAD8E
+);
+
+$bg-primary: map-get($map: $colors, $key: 'white');
+$bg-light: map-get($map: $colors, $key: 'light');
+$bg-dark: map-get($map: $colors, $key: 'dark');
+$bg-high-dark: map-get($map: $colors, $key: 'high-dark');
+$color-primary: map-get($map: $colors, $key: 'beige');
+$color-high-primary: map-get($map: $colors, $key: 'high-beige');

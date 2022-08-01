@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Roboto:wght@400;600;700&family=Old+Standard+TT&display=swap");
 /*
     RESET
 */
@@ -107,6 +108,101 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Archivo", "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  padding: 17px 20px;
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__right {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.header__icon {
+  width: 20px;
+  height: 20px;
+}
+.header__icon--login {
+  background-image: url("/src/svg/loginIcon.svg");
+}
+.header__icon--search {
+  background-image: url("/src/svg/search.svg");
+}
+.header__menu {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29), inset 0px 3px 6px rgba(0, 0, 0, 0.29);
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+.header__menu-btn {
+  width: 20px;
+  height: 13px;
+  margin-right: 32px;
+  background-image: url("/src/svg/menubtn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header__menu-btn--close {
+  background-image: url("/src/svg/close.svg");
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo__img {
+  width: 36px;
+  height: 36px;
+  background-image: url("/src/svg/H.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+}
+.logo__name {
+  width: 61px;
+  height: 21px;
+  background-image: url("/src/svg/HotelMiranda.svg");
+}
+
+.nav__li {
+  padding: 12px;
+}
+.nav__li:first-child {
+  padding-top: 32px;
+}
+.nav__li:last-child {
+  padding-bottom: 26px;
+}
+.nav__a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.show {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
