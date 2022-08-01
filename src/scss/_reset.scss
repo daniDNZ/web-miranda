@@ -1,0 +1,124 @@
+/*
+    RESET
+*/
+
+// Margins and paddings
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+// Img problems
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+// Reset <a>
+a {
+  display: block;
+}
+
+// ... Not in <p>
+p a {
+  display: inline;
+}
+
+// Remove <li> dots
+li {
+  list-style-type: none;
+}
+
+// Soft anchors
+html {
+  scroll-behavior: smooth;
+}
+
+// Deactivate default styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+// Pseudo
+blockquote::before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+// Typography and forms
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+// Input Focus
+textarea:focus,
+input:focus,
+input[type]:focus {
+  outline: 0 none;
+}
+
+// Reset tables
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// SVG problems
+svg {
+  display: block;
+  fill: currentColor;
+  pointer-events: none; // To fix the click event
+}
+
+// General Typo
+body {
+  font-size: 1rem;
+  line-height: 1.4em;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

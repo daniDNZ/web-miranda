@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "sass": "1.54.0"
+  },
+  "devDependencies": {
+    "http-server": "14.1.1"
+  },
+  "scripts": {
+    "start": "http-server ./public",
+    "watch-sass": "sass --watch src/scss:public/css"
+  }
+}
