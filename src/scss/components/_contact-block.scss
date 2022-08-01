@@ -1,0 +1,53 @@
+@use '../utils/mixins';
+@use '../utils/variables';
+
+.contact-block {
+  &__item {
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    @include mixins.flexbox(row, nowrap, flex-start, 22px)
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--mail {
+      background-image: url('/src/svg/mail.svg');
+    }
+
+    &--map {
+      background-image: url('/src/svg/map.svg');
+
+    }
+
+    &--phone {
+      background-image: url('/src/svg/phone.svg');
+
+    }
+  }
+
+  &__info {}
+
+  &__item-title {
+    font-family: variables.$font-title;
+    font-size: 20px;
+    line-height: 20px;
+
+
+    display: block;
+  }
+
+  &__item-subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    color: variables.$color-secondary;
+  }
+
+}

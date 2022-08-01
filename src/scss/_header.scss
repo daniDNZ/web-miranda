@@ -7,7 +7,7 @@
 
   padding: 17px 20px;
 
-  @include mixins.flexbox(row, no-wrap, space-between, 10px);
+  @include mixins.flexbox(row, nowrap, space-between, 10px);
 
   &__left {
     display: flex;

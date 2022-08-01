@@ -123,7 +123,7 @@ body {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   padding: 17px 20px;
   display: flex;
-  flex-flow: row no-wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   gap: 10px;
 }
@@ -167,10 +167,34 @@ body {
   background-image: url("/src/svg/close.svg");
 }
 
+.footer {
+  font-size: 16px;
+  line-height: 26px;
+  background-image: url("/src/svg/bgFooter.svg");
+  padding: 32px 0 0;
+  margin-top: 60px;
+}
+.footer__block {
+  margin: 0 22px 40px;
+}
+.footer__description {
+  color: #777777;
+}
+.footer__title {
+  font-family: "Old Standard TT";
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
 .logo {
   display: flex;
   align-items: center;
   gap: 14px;
+}
+.logo--footer {
+  gap: 28px;
+  margin: 0 0 47px 22px;
 }
 .logo__img {
   width: 36px;
@@ -180,10 +204,23 @@ body {
   background-position: center;
   box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
 }
+.logo__img--footer {
+  width: 80px;
+  height: 80px;
+  background-color: #BDAC8D;
+  background-image: url("/src/svg/Hwhite.svg");
+}
 .logo__name {
   width: 61px;
   height: 21px;
   background-image: url("/src/svg/HotelMiranda.svg");
+}
+.logo__name--footer {
+  width: 137px;
+  height: 56px;
+  background-image: url("/src/svg/HotelMirandaBig.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nav__li {
@@ -199,6 +236,120 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 17px;
+}
+
+.social-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.social-row__a {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-row__a:hover {
+  background-color: #BDAC8D;
+}
+.social-row__a--be {
+  background-image: url("/src/svg/social/be-icon.svg");
+}
+.social-row__a--be:hover {
+  background-image: url("/src/svg/social/be-icon-white.svg");
+}
+.social-row__a--fb {
+  background-image: url("/src/svg/social/fb-icon.svg");
+}
+.social-row__a--fb:hover {
+  background-image: url("/src/svg/social/fb-icon-white.svg");
+}
+.social-row__a--in {
+  background-image: url("/src/svg/social/in-icon.svg");
+}
+.social-row__a--in:hover {
+  background-image: url("/src/svg/social/in-icon-white.svg");
+}
+.social-row__a--tw {
+  background-image: url("/src/svg/social/tw-icon.svg");
+}
+.social-row__a--tw:hover {
+  background-image: url("/src/svg/social/tw-icon-white.svg");
+}
+.social-row__a--yt {
+  background-image: url("/src/svg/social/yt-icon.svg");
+}
+.social-row__a--yt:hover {
+  background-image: url("/src/svg/social/yt-icon-white.svg");
+}
+
+.services-block__ul {
+  max-height: 288px;
+  line-height: 48px;
+  color: #777777;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  gap: 0px;
+}
+
+.contact-block__item {
+  margin-bottom: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 22px;
+}
+.contact-block__item:last-child {
+  margin-bottom: 0px;
+}
+.contact-block__icon {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact-block__icon--mail {
+  background-image: url("/src/svg/mail.svg");
+}
+.contact-block__icon--map {
+  background-image: url("/src/svg/map.svg");
+}
+.contact-block__icon--phone {
+  background-image: url("/src/svg/phone.svg");
+}
+.contact-block__item-title {
+  font-family: "Old Standard TT";
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+}
+.contact-block__item-subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  color: #777777;
+}
+
+.legal-block {
+  background-color: #f9f9f9;
+  font-weight: 700;
+  margin: 0;
+  padding: 16px 20px;
+}
+.legal-block__copyright {
+  margin-bottom: 24px;
+  display: block;
+}
+.legal-block__a {
+  width: fit-content;
+  display: inline;
+}
+.legal-block__a:nth-child(odd) {
+  margin-right: 12px;
+}
+.legal-block__a:nth-child(even) {
+  margin-left: 12px;
 }
 
 .show {
