@@ -511,11 +511,11 @@ body {
 
 .feature {
   height: 360px;
-  min-width: 375px;
+  width: 100%;
   text-align: start;
   padding: 81px 38px;
   position: absolute;
-  right: 375px;
+  right: 100%;
 }
 .feature--active {
   right: 0;
