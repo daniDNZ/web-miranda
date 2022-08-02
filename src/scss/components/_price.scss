@@ -1,0 +1,15 @@
+@use '../utils/variables';
+
+.price {
+  font-weight: 700;
+  line-height: 43px;
+  color: variables.$color-primary;
+
+  &__amount {
+    font-size: 32px;
+  }
+
+  &__night {
+    font-size: 13px;
+  }
+}

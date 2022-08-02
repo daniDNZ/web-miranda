@@ -19,21 +19,19 @@
     background-position: center;
 
     &--mail {
-      background-image: url('/src/svg/mail.svg');
+      background-image: url('/svg/mail.svg');
     }
 
     &--map {
-      background-image: url('/src/svg/map.svg');
+      background-image: url('/svg/map.svg');
 
     }
 
     &--phone {
-      background-image: url('/src/svg/phone.svg');
+      background-image: url('/svg/phone.svg');
 
     }
   }
-
-  &__info {}
 
   &__item-title {
     font-family: variables.$font-title;

@@ -1,0 +1,41 @@
+@use '../utils/variables';
+
+.home-about {
+  &__top {
+    background-color: variables.$bg-light;
+
+    padding: 38px 20px;
+  }
+
+  &__button {
+    margin-bottom: 137px;
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+
+  &__first-image {
+    margin-top: -115px;
+  }
+
+  &__bg-image {
+    background-image: url('/svg/people-bg.svg');
+  }
+
+  &__card--team {
+    margin-bottom: 45px;
+  }
+
+  &__card-icon {
+    &--people {
+      background-image: url('/svg/people.svg');
+    }
+
+    &--calendar {
+      background-image: url('/svg/luxury-calendar.svg');
+    }
+  }
+
+}

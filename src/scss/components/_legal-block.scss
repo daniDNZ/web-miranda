@@ -3,6 +3,8 @@
 .legal-block {
   background-color: variables.$bg-light;
   font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -.48px;
 
   margin: 0;
   padding: 16px 20px;
@@ -16,14 +18,12 @@
   &__a {
     width: fit-content;
 
-    display: inline;
+    display: inline-block;
+  }
 
-    &:nth-child(odd) {
-      margin-right: 12px;
-    }
+  &__line {
+    display: inline-block;
 
-    &:nth-child(even) {
-      margin-left: 12px;
-    }
+    margin: 0 10px;
   }
 }

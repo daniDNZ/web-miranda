@@ -26,11 +26,11 @@
     height: 20px;
 
     &--login {
-      background-image: url('/src/svg/loginIcon.svg');
+      background-image: url('/svg/loginIcon.svg');
     }
 
     &--search {
-      background-image: url('/src/svg/search.svg');
+      background-image: url('/svg/search.svg');
     }
 
   }
@@ -50,12 +50,12 @@
     width: 20px;
     height: 13px;
     margin-right: 32px;
-    background-image: url('/src/svg/menubtn.svg');
+    background-image: url('/svg/menubtn.svg');
     background-repeat: no-repeat;
     background-position: center;
 
     &--close {
-      background-image: url('/src/svg/close.svg');
+      background-image: url('/svg/close.svg');
     }
   }
 }

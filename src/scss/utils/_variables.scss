@@ -19,6 +19,7 @@ $colors: (
   'dark': #222222,
   'high-dark': #333333,
   'gray': #777777,
+  'high-gray': #c2c2c2,
   'beige': #BDAC8D,
   'high-beige':#BEAD8E
 );
@@ -30,3 +31,4 @@ $bg-high-dark: map-get($map: $colors, $key: 'high-dark');
 $color-primary: map-get($map: $colors, $key: 'beige');
 $color-high-primary: map-get($map: $colors, $key: 'high-beige');
 $color-secondary: map-get($map: $colors, $key: 'gray');
+$color-high-secondary: map-get($map: $colors, $key: 'high-gray');

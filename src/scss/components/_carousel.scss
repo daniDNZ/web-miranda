@@ -1,0 +1,49 @@
+@use '../utils/variables';
+
+.carousel {
+  width: 100%;
+  height: 65vw;
+  background-color: variables.$color-secondary;
+
+  margin: 0 auto;
+
+  position: relative;
+  z-index: -1;
+
+  &__button {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    content: '';
+
+    position: absolute;
+    top: calc((65vw / 2) - 16px);
+
+    &--prev {
+      background-image: url('/svg/prev.svg');
+      left: 15px;
+    }
+
+    &--prev-active {
+      background-color: variables.$color-primary;
+      background-image: url('/svg/prev-active.svg');
+
+      left: 15px;
+    }
+
+    &--next {
+      background-image: url('/svg/next.svg');
+      right: 15px;
+    }
+
+    &--next-active {
+      background-color: variables.$color-primary;
+      background-image: url('/svg/next-active.svg');
+
+      right: 15px;
+    }
+  }
+}

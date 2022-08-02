@@ -1,0 +1,27 @@
+@use '../utils/variables';
+
+.home-banner {
+  background-color: variables.$bg-high-dark;
+  color: white;
+
+  padding: 75px 20px;
+
+  &__subtitle {
+    max-width: 237px;
+    color: white;
+
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    margin-bottom: 24px;
+
+    &--outline {
+      margin-bottom: 0;
+    }
+  }
+}

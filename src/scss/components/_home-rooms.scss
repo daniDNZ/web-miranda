@@ -1,0 +1,22 @@
+@use '../utils/variables';
+
+.home-rooms {
+  text-align: center;
+
+  &__h4 {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+  }
+
+  &__p {
+    margin-bottom: 12px;
+  }
+
+  &__wrapper {
+    background-color: white;
+
+    margin: -20px 20px 30px 20px;
+    padding: 19px 24px;
+  }
+}
