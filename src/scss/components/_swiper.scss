@@ -50,6 +50,7 @@
 }
 
 .swiper-slide {
+
   &__room {
     width: 100%;
     height: 65vw;
@@ -59,5 +60,16 @@
     position: relative;
     z-index: -1;
 
+  }
+
+  &__food {
+    width: 335px;
+    height: 335px;
+    background-color: variables.$color-high-secondary;
+
+    margin-bottom: 12px;
+
+    position: relative;
+    z-index: 100;
   }
 }

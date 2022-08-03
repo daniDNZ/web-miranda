@@ -36,13 +36,13 @@
     </div>
   </header>
   <main>
-      <div class="home-banner">
+      <div class="home-banner px-20">
         <h2 class="h2 home-banner__subtitle">The ultimate luxury experience</h2>
         <h1 class="h1 home-banner__title">The perfect base for you</h1>
         <button class="button home-banner__button">Take a tour</button>
         <button class="button button--outline home-banner__button--outline">Learn more</button>
       </div>
-      <div class="check-date">
+      <div class="check-date px-20">
         <form class="check-date__form">
           <label for="arrivalDate" class="check-date__label">Arrival Date</label>
           <input id="arrivalDate" type="date" class="check-date__input" value="2020-03-24">
@@ -53,7 +53,7 @@
       </div>
     <section class="section">
       <div class="home-about">
-        <div class="home-about__top">
+        <div class="home-about__top px-20">
           <h2 class="h2 section__h2">About us</h2>
           <h3 class="h3 section__h3">Discover our underground.</h3>
           <p class="section__p">
@@ -94,10 +94,6 @@
           <div class="icon-bar__icon icon-bar__icon--nosmoke"></div>
           <div class="icon-bar__icon icon-bar__icon--bar"></div>
         </div>
-        <!-- <div class="carousel">
-          <button class="carousel__button carousel__button--prev"></button>
-          <button class="carousel__button carousel__button--next-active"></button>
-        </div> -->
         <div class="swiper rooms-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide__room"></div>
@@ -122,7 +118,7 @@
         </div>
       </div>
     </section>
-    <section class="section section--dark">
+    <section class="section section--dark px-20">
       <div class="intro-video">
         <h2 class="h2 section__h2 section__h2--dark intro-video__h2">Intro video</h2>
         <h3 class="h3 section__h3">Meet with our luxury place.</h3>
@@ -131,7 +127,7 @@
         <button class="button">Book now</button>
       </div>
     </section>
-    <section class="section section--justified">
+    <section class="section section--justified features-container">
       <h2 class="h2 section__h2 section__h2--justified">Facilities</h2>
       <h3 class="h3 section__h3">Core Features</h3>
       <div class="swiper feature-swiper">
@@ -173,8 +169,97 @@
             <p class="p feature__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
           </div>
         </div>
-        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+        <div class="feature-swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
       </div>
+    </section>
+    <section class="section">
+      <div class="food-donut"></div>
+      <div class="px-20">
+        <h2 class="h2 section__h2">Menu</h2>
+        <h3 class="h3 section__h3">Our Foods Menu</h3>
+        <div class="food-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide food">
+              <div class="food__img"></div>
+              <div class="food__text">
+                <h4 class="h4 food__h4">Eggs & bacon</h4>
+                <p class="p food__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </div>
+            <div class="swiper-slide food">
+              <div class="food__img"></div>
+              <div class="food__text">
+                <h4 class="h4 food__h4">Tea or Coffee</h4>
+                <p class="p food__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </div>
+            <div class="swiper-slide food">
+              <div class="food__img"></div>
+              <div class="food__text">
+                <h4 class="h4 food__h4">Chia oatmeal</h4>
+                <p class="p food__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </div>
+            <div class="swiper-slide food">
+              <div class="food__img"></div>
+              <div class="food__text">
+                <h4 class="h4 food__h4">Fruit parfait</h4>
+                <p class="p food__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </div>
+            <div class="swiper-slide food">
+              <div class="food__img"></div>
+              <div class="food__text">
+                <h4 class="h4 food__h4">Marmalade selection</h4>
+                <p class="p food__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </div>
+            <div class="swiper-slide food">
+              <div class="food__img"></div>
+              <div class="food__text">
+                <h4 class="h4 food__h4">Cheese plate</h4>
+                <p class="p food__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next food-swiper__button food-swiper__button--next"></div>
+          <div class="swiper-button-prev food-swiper__button food-swiper__button--prev"></div>
+        </div>
+      </div>
+      <div class="swiper food-images-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide__food"></div>
+          <div class="swiper-slide swiper-slide__food"></div>
+          <div class="swiper-slide swiper-slide__food"></div>
+        </div>
+        <div class="food-images-swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
+      </div>
+    </section>
+    <section class="section section--dark section--justified">
+      <div class="hits-container">
+
+      
+      <div class="hit">
+        <div class="hit__icon hit__icon--rocket"></div>
+          <span class="hit__big">84k</span><span class="hit__plus">+</span>
+          <span class="hit__subtitle">Projects are Completed</span>
+      </div>
+      <div class="hit">
+        <div class="hit__icon hit__icon--suits"></div>
+          <span class="hit__big">10M</span><span class="hit__plus">+</span>
+          <span class="hit__subtitle">Active Backers Around World</span>
+      </div>
+      <div class="hit">
+        <div class="hit__icon hit__icon--stonks"></div>
+          <span class="hit__big">02k</span><span class="hit__plus">+</span>
+          <span class="hit__subtitle">Categories Served</span>
+      </div>
+      <div class="hit">
+        <div class="hit__icon hit__icon--book"></div>
+          <span class="hit__big">100M</span><span class="hit__plus">+</span>
+          <span class="hit__subtitle">Idea Raised Funds</span>
+      </div>
+    </div>
     </section>
   </main>
   <footer class="footer">

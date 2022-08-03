@@ -1,3 +1,16 @@
+const roomsSwiper = new Swiper(".rooms-swiper", {
+  spaceBetween: 20,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 const featureSwiper = new Swiper('.feature-swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -8,24 +21,37 @@ const featureSwiper = new Swiper('.feature-swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.feature-swiper-pagination',
     clickable: true
   }
 });
 
-const roomsSwiper = new Swiper(".rooms-swiper", {
+const foodSwiper = new Swiper(".food-swiper", {
   spaceBetween: 20,
-  centeredSlides: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  grid: {
+    fill: 'row',
+    rows: 3,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".food-swiper__button--next",
+    prevEl: ".food-swiper__button--prev",
   },
+});
+
+const foodImageSwiper = new Swiper(".food-images-swiper", {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 16,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.food-images-swiper-pagination',
+    clickable: true
+  }
 });

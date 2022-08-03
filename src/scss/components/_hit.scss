@@ -1,0 +1,64 @@
+@use '../utils/variables';
+
+.hits-container {
+  padding: 48px;
+}
+
+.hit {
+  font-family: 'roboto';
+  font-weight: 700;
+
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin: 0 auto 16px;
+
+    &--rocket {
+      background-image: url('/svg/hits/rocket.svg');
+    }
+
+    &--suits {
+      background-image: url('/svg/hits/suits.svg');
+    }
+
+    &--stonks {
+      background-image: url('/svg/hits/stonks.svg');
+    }
+
+    &--book {
+      background-image: url('/svg/hits/book.svg');
+    }
+  }
+
+  &__top {
+    height: fit-content;
+  }
+
+  &__big {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  &__plus {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    color: variables.$color-secondary;
+
+    margin-top: -12px;
+    display: block;
+  }
+}
