@@ -53,6 +53,7 @@
     background-image: url('/svg/menubtn.svg');
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 
     &--close {
       background-image: url('/svg/close.svg');

@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="css/styles.css">
   <title>Hotel Miranda</title>
 </head>
@@ -90,9 +94,24 @@
           <div class="icon-bar__icon icon-bar__icon--nosmoke"></div>
           <div class="icon-bar__icon icon-bar__icon--bar"></div>
         </div>
-        <div class="carousel">
+        <!-- <div class="carousel">
           <button class="carousel__button carousel__button--prev"></button>
           <button class="carousel__button carousel__button--next-active"></button>
+        </div> -->
+        <div class="swiper rooms-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide__room"></div>
+            <div class="swiper-slide swiper-slide__room"></div>
+            <div class="swiper-slide swiper-slide__room"></div>
+            <div class="swiper-slide swiper-slide__room"></div>
+            <div class="swiper-slide swiper-slide__room"></div>
+            <div class="swiper-slide swiper-slide__room"></div>
+            <div class="swiper-slide swiper-slide__room"></div>
+            <div class="swiper-slide swiper-slide__room"></div>
+            <div class="swiper-slide swiper-slide__room"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
         <div class="wrapper-x home-rooms__wrapper">
           <h4 class="h4 home-rooms__h4">Minimal duplex room</h4>
@@ -115,46 +134,46 @@
     <section class="section section--justified">
       <h2 class="h2 section__h2 section__h2--justified">Facilities</h2>
       <h3 class="h3 section__h3">Core Features</h3>
-      <div class="swiper">
+      <div class="swiper feature-swiper">
         <div class="swiper-wrapper">
-          <div class="feature feature--active swiper-slide">
+          <div class="feature feature--active swiper-slide" aria-label="1 / 6">
             <div class="feature__icon feature__icon--one"></div>
             <span class="feature__number">01</span>
             <h4 class="h4 feature__h4">Have high rating</h4>
             <p class="p feature__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
           </div>
-          <div class="feature swiper-slide">
+          <div class="feature swiper-slide" aria-label="2 / 6">
             <div class="feature__icon feature__icon--two"></div>
             <div class="feature__number">02</div>
             <h4 class="h4 feature__h4">Quiet hours</h4>
             <p class="p feature__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
           </div>
-          <div class="feature swiper-slide">
+          <div class="feature swiper-slide" aria-label="3 / 6">
             <div class="feature__icon feature__icon--three"></div>
             <div class="feature__number">03</div>
             <h4 class="h4 feature__h4">Best Locations</h4>
             <p class="p feature__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
           </div>
-          <div class="feature swiper-slide">
+          <div class="feature swiper-slide" aria-label="4 / 6">
             <div class="feature__icon feature__icon--four"></div>
             <div class="feature__number">04</div>
             <h4 class="h4 feature__h4">Free cancellation</h4>
             <p class="p feature__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
           </div>
-          <div class="feature swiper-slide">
+          <div class="feature swiper-slide" aria-label="5 / 6">
             <div class="feature__icon feature__icon--five"></div>
             <div class="feature__number">05</div>
             <h4 class="h4 feature__h4">Payment options</h4>
             <p class="p feature__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
           </div>
-          <div class="feature swiper-slide">
+          <div class="feature swiper-slide" aria-label="6 / 6">
             <div class="feature__icon feature__icon--six"></div>
             <div class="feature__number">06</div>
             <h4 class="h4 feature__h4">Special Offers</h4>
             <p class="p feature__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
       </div>
     </section>
   </main>
@@ -219,6 +238,7 @@
       </div>
     </div>
   </footer>
-  <script src="/js/index.js" type="module"></script>
+  <script src="index.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
