@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "sass": "1.54.0"
+    "sass": "1.54.0",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "http-server": "14.1.1"

@@ -514,11 +514,6 @@ body {
   width: 100%;
   text-align: start;
   padding: 81px 38px;
-  position: absolute;
-  right: 100%;
-}
-.feature--active {
-  right: 0;
 }
 .feature__icon {
   width: 72px;
