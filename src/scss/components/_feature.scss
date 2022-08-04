@@ -1,5 +1,32 @@
+@use '../utils/variables';
+
 .features-container {
   margin-bottom: 175px;
+
+  &--dark {
+    color: white;
+    background-color: variables.$bg-dark;
+
+    padding: 48px 20px;
+    margin-bottom: 60px;
+
+    & .feature {
+      background-color: variables.$bg-contrast-dark;
+
+      margin-bottom: 12px;
+
+      &__number {
+        color: variables.$color-dark;
+
+        right: 12px;
+      }
+    }
+
+    & .swiper-pagination-bullet {
+      background-color: variables.$color-contrast-dark;
+      opacity: 1;
+    }
+  }
 }
 
 .feature {

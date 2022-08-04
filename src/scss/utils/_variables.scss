@@ -18,17 +18,21 @@ $colors: (
   'light': #f9f9f9,
   'dark': #222222,
   'high-dark': #333333,
+  'contrast-dark': #292929,
   'gray': #777777,
   'high-gray': #c2c2c2,
   'beige': #BDAC8D,
-  'high-beige':#BEAD8E
+  'high-beige':#bead8e
 );
 
 $bg-primary: map-get($map: $colors, $key: 'white');
 $bg-light: map-get($map: $colors, $key: 'light');
 $bg-dark: map-get($map: $colors, $key: 'dark');
 $bg-high-dark: map-get($map: $colors, $key: 'high-dark');
+$bg-contrast-dark: map-get($map: $colors, $key: 'contrast-dark');
 $color-primary: map-get($map: $colors, $key: 'beige');
 $color-high-primary: map-get($map: $colors, $key: 'high-beige');
 $color-secondary: map-get($map: $colors, $key: 'gray');
 $color-high-secondary: map-get($map: $colors, $key: 'high-gray');
+$color-dark: map-get($map: $colors, $key: 'dark');
+$color-contrast-dark: map-get($map: $colors, $key: 'contrast-dark');

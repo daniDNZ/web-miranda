@@ -1,0 +1,29 @@
+@use '../utils/variables';
+
+.breadcrumb {
+  width: fit-content;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -.5px;
+
+  padding: 16px 24px;
+
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+
+  &__a {
+    display: inline;
+  }
+
+  &__line {
+    margin: 0 10px;
+  }
+
+  &__current {
+    color: variables.$color-high-primary;
+  }
+}

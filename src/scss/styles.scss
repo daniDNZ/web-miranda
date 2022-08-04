@@ -13,8 +13,12 @@
 @use 'components/video';
 @use 'components/feature';
 @use 'components/swiper';
+@use 'components/banner';
+@use 'components/breadcrumb';
 @use 'components/hit';
 @use 'components/food-element';
+@use 'components/fact';
+@use 'components/room';
 @use 'components/services-block';
 @use 'components/contact-block';
 @use 'components/legal-block';
@@ -23,4 +27,6 @@
 @use 'components/home-about';
 @use 'components/home-rooms';
 @use 'components/intro-video';
+@use 'components/about-intro';
+@use 'components/restaurant-card';
 @use 'utils/others';

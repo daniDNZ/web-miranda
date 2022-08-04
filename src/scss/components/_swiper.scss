@@ -6,7 +6,7 @@
   width: 7px;
   height: 7px;
 
-  &-active {
+  &.swiper-pagination-bullet-active {
     background-color: variables.$color-primary;
   }
 }
@@ -65,6 +65,17 @@
   &__food {
     width: 335px;
     height: 335px;
+    background-color: variables.$color-high-secondary;
+
+    margin-bottom: 12px;
+
+    position: relative;
+    z-index: 100;
+  }
+
+  &__fact {
+    width: 335px;
+    height: 230px;
     background-color: variables.$color-high-secondary;
 
     margin-bottom: 12px;

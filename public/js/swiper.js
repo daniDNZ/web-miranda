@@ -55,3 +55,29 @@ const foodImageSwiper = new Swiper(".food-images-swiper", {
     clickable: true
   }
 });
+
+const factsSwiper = new Swiper(".facts-swiper", {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 16,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.facts-images-swiper-pagination',
+    clickable: true
+  }
+});
+
+const roomsPageSwiper = new Swiper(".rooms-page-swiper", {
+  spaceBetween: 24,
+  grid: {
+    fill: 'row',
+    rows: 6,
+  },
+});
