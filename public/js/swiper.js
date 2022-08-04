@@ -80,4 +80,15 @@ const roomsPageSwiper = new Swiper(".rooms-page-swiper", {
     fill: 'row',
     rows: 6,
   },
+  pagination: {
+    el: '.rooms-page-swiper-pagination',
+    clickable: true,
+    renderBullet: function (index) {
+      return `<span class="swiper-pagination-bullet swiper-pagination-bullet--square">${index+1}</span>`;
+    },
+  },
+  navigation: {
+    nextEl: ".rooms-page-swiper__button--next",
+    prevEl: ".rooms-page-swiper__button--prev",
+  },
 });

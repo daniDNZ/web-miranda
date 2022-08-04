@@ -9,6 +9,19 @@
   &.swiper-pagination-bullet-active {
     background-color: variables.$color-primary;
   }
+
+  &--square {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    color: black;
+    background-color: transparent;
+    opacity: 1;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .swiper-button-prev {

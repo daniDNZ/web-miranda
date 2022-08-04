@@ -1,15 +1,30 @@
 @use '../utils/variables';
+@use '../utils/mixins';
 
 .price {
   font-weight: 700;
   line-height: 43px;
   color: variables.$color-primary;
 
+  &--booking {
+    @include mixins.flexbox(row, nowrap, center, 20px);
+  }
+
   &__amount {
     font-size: 32px;
+
+    &--same-size {
+      font-size: 16px;
+      line-height: 17px;
+    }
   }
 
   &__night {
     font-size: 13px;
+
+    &--same-size {
+      font-size: 16px;
+      line-height: 17px;
+    }
   }
 }

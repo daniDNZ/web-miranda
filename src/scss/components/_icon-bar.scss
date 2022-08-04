@@ -13,6 +13,10 @@
   position: relative;
   z-index: 100;
 
+  &--bottom {
+    margin: -20px auto 28px auto;
+  }
+
   &__icon {
     width: 14px;
     height: 12px;

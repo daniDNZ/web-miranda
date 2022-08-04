@@ -393,6 +393,9 @@ body {
   position: relative;
   z-index: 100;
 }
+.icon-bar--bottom {
+  margin: -20px auto 28px auto;
+}
 .icon-bar__icon {
   width: 14px;
   height: 12px;
@@ -472,11 +475,25 @@ body {
   line-height: 43px;
   color: #BDAC8D;
 }
+.price--booking {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 20px;
+}
 .price__amount {
   font-size: 32px;
 }
+.price__amount--same-size {
+  font-size: 16px;
+  line-height: 17px;
+}
 .price__night {
   font-size: 13px;
+}
+.price__night--same-size {
+  font-size: 16px;
+  line-height: 17px;
 }
 
 .video--square {
@@ -564,6 +581,17 @@ body {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #BDAC8D;
 }
+.swiper-pagination-bullet--square {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  color: black;
+  background-color: transparent;
+  opacity: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .swiper-button-prev {
   width: 32px;
@@ -628,6 +656,7 @@ body {
   color: white;
   padding-top: 75px;
   padding-bottom: 90px;
+  margin-bottom: 20px;
   position: relative;
 }
 .banner__h2 {
@@ -804,6 +833,47 @@ body {
   height: 32px;
   background-image: url("/svg/facts/arrow.svg");
   margin-left: auto;
+}
+
+.rooms-page-swiper {
+  text-align: center;
+}
+.rooms-page-swiper__wrapper {
+  margin-bottom: 24px;
+}
+.rooms-page-swiper__button--next {
+  width: 16px;
+  height: 16px;
+  background-image: url("/svg/double-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+.rooms-page-swiper__button--prev {
+  width: 16px;
+  height: 16px;
+  background-image: url("/svg/double-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+}
+
+.room__image {
+  width: 335px;
+  height: 218px;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+}
+.room__booking-now {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #c2c2c2;
+  display: inline-block;
 }
 
 .services-block__ul {
@@ -993,6 +1063,7 @@ body {
   aspect-ratio: 16/9;
   background-color: #c2c2c2;
   margin-bottom: 36px;
+  margin-top: 60px;
 }
 .about-intro__p {
   font-family: "Old Standard TT";
