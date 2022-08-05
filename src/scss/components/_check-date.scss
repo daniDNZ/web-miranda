@@ -48,4 +48,65 @@
     padding-right: 26px;
     padding-left: 26px;
   }
+
+  &__h4 {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -.54px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 36px;
+  }
+
+  // Modified
+  &--light {
+    background-color: white;
+    color: variables.$color-dark;
+
+    padding: 0 40px;
+
+    & .check-date__form {
+      padding-bottom: 0;
+    }
+
+    & .check-date__label {
+      margin-bottom: 13px;
+    }
+
+    & .check-date__button {
+      width: 100%;
+    }
+
+    & .check-date__input {
+      height: 60px;
+      border-bottom: none;
+      background-color: variables.$bg-light;
+
+      margin-bottom: 20px;
+
+      position: relative;
+
+      &:focus {
+        color: inherit;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        width: 15px;
+        height: 15px;
+        background-image: url('/svg/calendar.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        content: '';
+        filter: grayscale(100%);
+
+        position: absolute;
+        right: 33px;
+      }
+    }
+  }
 }

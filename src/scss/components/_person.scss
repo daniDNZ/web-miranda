@@ -1,0 +1,46 @@
+@use '../utils/variables';
+
+.person {
+  text-align: center;
+
+  padding: 60px 28px 41px;
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-color: variables.$bg-high-gray;
+
+    margin: 0 auto 38px;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 46px;
+      height: 46px;
+      background-color: variables.$color-primary;
+      background-image: url('/svg/check.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 4px solid white;
+      border-radius: 46px;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__name {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    color: variables.$color-high-primary;
+
+    margin-bottom: 25px;
+  }
+
+  &__text {}
+}

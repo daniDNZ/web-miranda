@@ -176,6 +176,10 @@ body {
   padding-bottom: 20px;
 }
 
+.margin-auto {
+  margin: 0 auto;
+}
+
 .header {
   width: 100%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
@@ -256,6 +260,9 @@ body {
 .section--dark {
   background-color: #222222;
   color: white;
+}
+.section--m-0 {
+  margin: 0;
 }
 .section__h2 {
   margin-bottom: 24px;
@@ -609,6 +616,9 @@ body {
   background-image: url("/svg/prev.svg");
   opacity: 1;
 }
+.swiper-button-prev--out {
+  left: 15px;
+}
 
 .swiper-button-next {
   width: 32px;
@@ -626,10 +636,13 @@ body {
   background-image: url("/svg/next.svg");
   opacity: 1;
 }
+.swiper-button-next--out {
+  right: 15px;
+}
 
 .swiper-slide__room {
   width: 100%;
-  height: 65vw;
+  height: 60vw;
   background-color: #777777;
   position: relative;
   z-index: -1;
@@ -660,6 +673,7 @@ body {
   position: relative;
 }
 .banner__h2 {
+  color: white;
   margin-bottom: 16px;
 }
 
@@ -874,8 +888,104 @@ body {
   line-height: 17px;
   color: #c2c2c2;
   display: inline-block;
+  align-self: center;
 }
 
+.amenities-container {
+  padding-bottom: 44px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 18px;
+  gap: 17px;
+}
+
+.amenitie__name {
+  color: #777777;
+}
+.amenitie__icon {
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  display: inline-block;
+}
+.amenitie__icon--ac {
+  background-image: url("/svg/amenities/ac.svg");
+}
+.amenitie__icon--bed {
+  background-image: url("/svg/amenities/bed.svg");
+}
+.amenitie__icon--breakfast {
+  background-image: url("/svg/amenities/breakfast.svg");
+}
+.amenitie__icon--cleaning {
+  background-image: url("/svg/amenities/cleaning.svg");
+}
+.amenitie__icon--expert {
+  background-image: url("/svg/amenities/expert.svg");
+}
+.amenitie__icon--grocery {
+  background-image: url("/svg/amenities/grocery.svg");
+}
+.amenitie__icon--key {
+  background-image: url("/svg/amenities/key.svg");
+}
+.amenitie__icon--kitchen {
+  background-image: url("/svg/amenities/kitchen.svg");
+}
+.amenitie__icon--security {
+  background-image: url("/svg/amenities/security.svg");
+}
+.amenitie__icon--shop {
+  background-image: url("/svg/amenities/shop.svg");
+}
+.amenitie__icon--shower {
+  background-image: url("/svg/amenities/shower.svg");
+}
+.amenitie__icon--support {
+  background-image: url("/svg/amenities/support.svg");
+}
+.amenitie__icon--towels {
+  background-image: url("/svg/amenities/towels.svg");
+}
+.amenitie__icon--wifi {
+  background-image: url("/svg/amenities/wifi.svg");
+}
+
+.person {
+  text-align: center;
+  padding: 60px 28px 41px;
+}
+.person__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color: #c2c2c2;
+  margin: 0 auto 38px;
+  position: relative;
+}
+.person__img::after {
+  content: "";
+  width: 46px;
+  height: 46px;
+  background-color: #BDAC8D;
+  background-image: url("/svg/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 4px solid white;
+  border-radius: 46px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.person__name {
+  margin-bottom: 15px;
+}
+.person__subtitle {
+  color: #bead8e;
+  margin-bottom: 25px;
+}
 .services-block__ul {
   max-height: 288px;
   line-height: 48px;
@@ -1003,6 +1113,52 @@ body {
 .check-date__button {
   padding-right: 26px;
   padding-left: 26px;
+}
+.check-date__h4 {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.54px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.check-date--light {
+  background-color: white;
+  color: #222222;
+  padding: 0 40px;
+}
+.check-date--light .check-date__form {
+  padding-bottom: 0;
+}
+.check-date--light .check-date__label {
+  margin-bottom: 13px;
+}
+.check-date--light .check-date__button {
+  width: 100%;
+}
+.check-date--light .check-date__input {
+  height: 60px;
+  border-bottom: none;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  position: relative;
+}
+.check-date--light .check-date__input:focus {
+  color: inherit;
+}
+.check-date--light .check-date__input::before {
+  display: none;
+}
+.check-date--light .check-date__input::after {
+  width: 15px;
+  height: 15px;
+  background-image: url("/svg/calendar.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  filter: grayscale(100%);
+  position: absolute;
+  right: 33px;
 }
 
 .home-about__top {
@@ -1157,6 +1313,12 @@ body {
 
 .show {
   display: block;
+}
+
+.separator {
+  border: 1px solid #f9f9f9;
+  margin-top: 14px;
+  margin-bottom: 35px;
 }
 
 /*# sourceMappingURL=styles.css.map */

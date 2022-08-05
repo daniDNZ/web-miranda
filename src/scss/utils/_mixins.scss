@@ -4,3 +4,10 @@
   justify-content: $justify;
   gap: $gap
 }
+
+@mixin grid($columns, $rowSize, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-auto-rows: $rowSize;
+  gap: $gap;
+}

@@ -30,6 +30,7 @@ $bg-light: map-get($map: $colors, $key: 'light');
 $bg-dark: map-get($map: $colors, $key: 'dark');
 $bg-high-dark: map-get($map: $colors, $key: 'high-dark');
 $bg-contrast-dark: map-get($map: $colors, $key: 'contrast-dark');
+$bg-high-gray: map-get($map: $colors, $key: 'high-gray');
 $color-primary: map-get($map: $colors, $key: 'beige');
 $color-high-primary: map-get($map: $colors, $key: 'high-beige');
 $color-secondary: map-get($map: $colors, $key: 'gray');
