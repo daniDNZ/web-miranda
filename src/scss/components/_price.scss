@@ -27,4 +27,22 @@
       line-height: 17px;
     }
   }
+
+  &--previous {
+    line-height: 25px;
+    text-decoration: line-through;
+
+    & .price__amount {
+      font-size: 23px;
+    }
+
+    & .price__night {
+      font-size: 11px;
+      line-height: 12px;
+    }
+  }
+
+  &--offer {
+    color: variables.$color-offer;
+  }
 }

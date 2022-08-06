@@ -22,7 +22,8 @@ $colors: (
   'gray': #777777,
   'high-gray': #c2c2c2,
   'beige': #BDAC8D,
-  'high-beige':#bead8e
+  'high-beige':#bead8e,
+  'red-offer': #DE5777
 );
 
 $bg-primary: map-get($map: $colors, $key: 'white');
@@ -37,3 +38,4 @@ $color-secondary: map-get($map: $colors, $key: 'gray');
 $color-high-secondary: map-get($map: $colors, $key: 'high-gray');
 $color-dark: map-get($map: $colors, $key: 'dark');
 $color-contrast-dark: map-get($map: $colors, $key: 'contrast-dark');
+$color-offer: map-get($map: $colors, $key: 'red-offer');

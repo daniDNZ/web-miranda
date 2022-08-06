@@ -176,6 +176,11 @@ body {
   padding-bottom: 20px;
 }
 
+.mx-20 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 .margin-auto {
   margin: 0 auto;
 }
@@ -502,6 +507,20 @@ body {
   font-size: 16px;
   line-height: 17px;
 }
+.price--previous {
+  line-height: 25px;
+  text-decoration: line-through;
+}
+.price--previous .price__amount {
+  font-size: 23px;
+}
+.price--previous .price__night {
+  font-size: 11px;
+  line-height: 12px;
+}
+.price--offer {
+  color: #DE5777;
+}
 
 .video--square {
   width: 335px;
@@ -600,6 +619,11 @@ body {
   justify-content: center;
 }
 
+.button-container {
+  width: 100%;
+  position: relative;
+}
+
 .swiper-button-prev {
   width: 32px;
   height: 32px;
@@ -618,6 +642,10 @@ body {
 }
 .swiper-button-prev--out {
   left: 15px;
+}
+.swiper-button-prev--out-wide {
+  left: 15px;
+  top: 30vw;
 }
 
 .swiper-button-next {
@@ -638,6 +666,10 @@ body {
 }
 .swiper-button-next--out {
   right: 15px;
+}
+.swiper-button-next--out-wide {
+  right: 15px;
+  top: 30vw;
 }
 
 .swiper-slide__room {
@@ -898,6 +930,9 @@ body {
   grid-auto-rows: 18px;
   gap: 17px;
 }
+.amenities-container--offer {
+  padding-bottom: 25px;
+}
 
 .amenitie__name {
   color: #777777;
@@ -986,6 +1021,30 @@ body {
   color: #bead8e;
   margin-bottom: 25px;
 }
+.offer {
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+.offer__img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #f9f9f9;
+  margin-bottom: 16px;
+  position: relative;
+}
+.offer__previous-price {
+  margin-bottom: 50px;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.offer__new-price {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
 .services-block__ul {
   max-height: 288px;
   line-height: 48px;
@@ -1190,6 +1249,8 @@ body {
 
 .home-rooms {
   text-align: center;
+  background-color: white;
+  padding-bottom: 20px;
 }
 .home-rooms__h4 {
   font-size: 28px;
@@ -1204,6 +1265,22 @@ body {
   padding: 19px 24px;
   position: relative;
   z-index: 100;
+}
+
+.popular-rooms {
+  text-align: center;
+  background-color: #222222;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.popular-rooms__h2 {
+  color: #bead8e;
+  margin-bottom: 25px;
+}
+.popular-rooms__h3 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 48px;
 }
 
 .intro-video {

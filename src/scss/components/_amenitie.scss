@@ -6,6 +6,10 @@
   padding-bottom: 44px;
 
   @include mixins.grid(2, 18px, 17px);
+
+  &--offer {
+    padding-bottom: 25px;
+  }
 }
 
 .amenitie {

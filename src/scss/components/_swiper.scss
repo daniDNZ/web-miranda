@@ -24,6 +24,11 @@
   }
 }
 
+.button-container {
+  width: 100%;
+  position: relative;
+}
+
 .swiper-button-prev {
   width: 32px;
   height: 32px;
@@ -44,6 +49,11 @@
 
   &--out {
     left: 15px;
+  }
+
+  &--out-wide {
+    left: 15px;
+    top: 30vw;
   }
 }
 
@@ -69,6 +79,11 @@
 
   &--out {
     right: 15px;
+  }
+
+  &--out-wide {
+    right: 15px;
+    top: 30vw;
   }
 }
 
