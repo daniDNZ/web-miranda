@@ -1,0 +1,62 @@
+@use '../utils/mixins';
+@use '../utils/variables';
+
+.facts-container {
+  margin-bottom: 24px;
+}
+
+.facts-swiper {
+  text-align: center;
+}
+
+.fact {
+
+  padding: 25px 20px 28px;
+
+  @include mixins.flexbox(row, nowrap, flex-start, 14px);
+  align-items: center;
+
+  &__icon {
+    width: 65px;
+    height: 65px;
+
+    &--happy {
+      background-image: url('/svg/facts/happy.svg');
+    }
+
+    &--thumbup {
+      background-image: url('/svg/facts/thumbup.svg');
+
+    }
+
+    &--world {
+      background-image: url('/svg/facts/world.svg');
+
+    }
+  }
+
+  &__big-text {
+    font-family: variables.$font-title;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -1.8px;
+
+    display: block;
+  }
+
+  &__small-text {
+    font-size: 16px;
+    line-height: 16px;
+    color: variables.$color-secondary;
+
+    display: block;
+  }
+
+  &__arrow {
+    width: 32px;
+    height: 32px;
+    background-image: url('/svg/facts/arrow.svg');
+
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,53 @@
+@use '../utils/variables';
+
+.rooms-page-swiper {
+  text-align: center;
+
+  &__wrapper {
+    margin-bottom: 24px;
+  }
+
+  &__button--next {
+    width: 16px;
+    height: 16px;
+    background-image: url('/svg/double-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+  }
+
+  &__button--prev {
+    width: 16px;
+    height: 16px;
+    background-image: url('/svg/double-left-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+  }
+}
+
+.room {
+  &__image {
+    width: 335px;
+    height: 218px;
+    background-color: variables.$bg-light;
+
+    margin: 0 auto;
+  }
+
+  &__booking-now {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    color: variables.$color-high-secondary;
+
+    display: inline-block;
+    align-self: center;
+  }
+}

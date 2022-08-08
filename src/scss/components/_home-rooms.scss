@@ -1,0 +1,49 @@
+@use '../utils/variables';
+
+.home-rooms {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 20px;
+
+  &__h4 {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+  }
+
+  &__p {
+    margin-bottom: 12px;
+  }
+
+  &__wrapper {
+    background-color: white;
+
+    margin: -20px 20px 30px 20px;
+    padding: 19px 24px;
+
+    position: relative;
+    z-index: 100;
+  }
+
+}
+
+.popular-rooms {
+  text-align: center;
+  background-color: variables.$bg-dark;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  &__h2 {
+    color: variables.$color-high-primary;
+
+    margin-bottom: 25px;
+  }
+
+  &__h3 {
+    font-size: 40px;
+    color: white;
+
+    margin-bottom: 48px;
+  }
+}

@@ -1,0 +1,19 @@
+@use '../utils/variables';
+
+.banner {
+  background-color: variables.$bg-high-dark;
+  color: white;
+
+  padding-top: 75px;
+  padding-bottom: 90px;
+
+  margin-bottom: 20px;
+
+  position: relative;
+
+  &__h2 {
+    color: white;
+
+    margin-bottom: 16px;
+  }
+}

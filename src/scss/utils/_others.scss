@@ -1,0 +1,12 @@
+@use 'variables';
+
+.show {
+  display: block;
+}
+
+.separator {
+  border: 1px solid variables.$bg-light;
+
+  margin-top: 14px;
+  margin-bottom: 35px;
+}

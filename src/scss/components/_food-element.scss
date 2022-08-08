@@ -1,0 +1,63 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.food-donut {
+  width: 115px;
+  height: 115px;
+  background-image: url('/svg/donut.svg');
+
+  position: absolute;
+  right: -25px;
+  top: -115px;
+}
+
+.food-swiper {
+  margin-bottom: 120px;
+
+  position: relative;
+
+  &__button {
+    // top = 100% + design margin + half button
+    top: calc(100% + 24px + 16px);
+
+    &--prev {
+      left: auto;
+      right: calc(32px + 16px);
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    &.swiper-button-disabled {
+      background-color: variables.$bg-light;
+    }
+  }
+}
+
+.food-images-swiper {
+  text-align: center;
+
+  position: relative;
+
+}
+
+.food {
+
+  @include mixins.flexbox(row, nowrap, space-between, 30px);
+  align-items: center;
+
+  &__img {
+    min-width: 120px;
+    height: 120px;
+    background-color: variables.$color-high-secondary;
+
+  }
+
+  &__h4 {
+    font-size: 24px;
+    line-height: 24px;
+
+    margin-bottom: 12px;
+  }
+}

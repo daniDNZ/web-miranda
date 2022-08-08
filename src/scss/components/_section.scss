@@ -1,0 +1,42 @@
+@use '../utils/variables';
+
+.section {
+  margin-bottom: 60px;
+
+  position: relative;
+
+  &--justified {
+    text-align: center;
+  }
+
+  &--dark {
+    background-color: variables.$bg-dark;
+    color: white;
+  }
+
+  &--m-0 {
+    margin: 0;
+  }
+
+  &__h2 {
+    margin-bottom: 24px;
+
+    &--dark {
+      color: variables.$color-primary;
+    }
+  }
+
+  &__h3 {
+    margin-bottom: 16px;
+  }
+
+  &__p {
+    color: variables.$color-secondary;
+
+    margin-bottom: 24px;
+
+    &--dark {
+      color: variables.$color-high-secondary;
+    }
+  }
+}

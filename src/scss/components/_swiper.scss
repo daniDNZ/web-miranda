@@ -1,0 +1,124 @@
+@use '../utils/variables';
+
+// Custom swiper
+
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+
+  &.swiper-pagination-bullet-active {
+    background-color: variables.$color-primary;
+  }
+
+  &--square {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    color: black;
+    background-color: transparent;
+    opacity: 1;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.button-container {
+  width: 100%;
+  position: relative;
+}
+
+.swiper-button-prev {
+  width: 32px;
+  height: 32px;
+  background-color: variables.$color-primary;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/svg/prev-active.svg');
+
+  &::after {
+    display: none;
+  }
+
+  &.swiper-button-disabled {
+    background-color: white;
+    background-image: url('/svg/prev.svg');
+    opacity: 1;
+  }
+
+  &--out {
+    left: 15px;
+  }
+
+  &--out-wide {
+    left: 15px;
+    top: 30vw;
+  }
+}
+
+.swiper-button-next {
+  width: 32px;
+  height: 32px;
+  background-color: variables.$color-primary;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/svg/next-active.svg');
+
+
+
+  &::after {
+    display: none;
+  }
+
+  &.swiper-button-disabled {
+    background-color: white;
+    background-image: url('/svg/next.svg');
+    opacity: 1;
+  }
+
+  &--out {
+    right: 15px;
+  }
+
+  &--out-wide {
+    right: 15px;
+    top: 30vw;
+  }
+}
+
+.swiper-slide {
+
+  &__room {
+    width: 100%;
+    height: 60vw;
+
+    background-color: variables.$color-secondary;
+
+    position: relative;
+    z-index: -1;
+
+  }
+
+  &__food {
+    width: 335px;
+    height: 335px;
+    background-color: variables.$color-high-secondary;
+
+    margin-bottom: 12px;
+
+    position: relative;
+    z-index: 100;
+  }
+
+  &__fact {
+    width: 335px;
+    height: 230px;
+    background-color: variables.$color-high-secondary;
+
+    margin-bottom: 12px;
+
+    position: relative;
+    z-index: 100;
+  }
+}

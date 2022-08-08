@@ -1,0 +1,29 @@
+@use '../utils/variables';
+
+.legal-block {
+  background-color: variables.$bg-light;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -.48px;
+
+  margin: 0;
+  padding: 16px 20px;
+
+  &__copyright {
+    margin-bottom: 24px;
+
+    display: block;
+  }
+
+  &__a {
+    width: fit-content;
+
+    display: inline-block;
+  }
+
+  &__line {
+    display: inline-block;
+
+    margin: 0 10px;
+  }
+}

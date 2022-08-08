@@ -1,0 +1,42 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Roboto:wght@400;600;700&family=Old+Standard+TT&display=swap');
+
+$fonts: (
+  'primary': ('Archivo',
+    'Roboto'
+  ),
+  'title': ("Old Standard TT"
+  )
+);
+
+$font-primary: map-get($map: $fonts, $key: 'primary');
+$font-title: map-get($map: $fonts, $key: 'title');
+
+// Colors
+$colors: (
+  'white': #ffffff,
+  'light': #f9f9f9,
+  'dark': #222222,
+  'high-dark': #333333,
+  'contrast-dark': #292929,
+  'gray': #777777,
+  'high-gray': #c2c2c2,
+  'beige': #BDAC8D,
+  'high-beige':#bead8e,
+  'red-offer': #DE5777
+);
+
+$bg-primary: map-get($map: $colors, $key: 'white');
+$bg-light: map-get($map: $colors, $key: 'light');
+$bg-dark: map-get($map: $colors, $key: 'dark');
+$bg-high-dark: map-get($map: $colors, $key: 'high-dark');
+$bg-contrast-dark: map-get($map: $colors, $key: 'contrast-dark');
+$bg-high-gray: map-get($map: $colors, $key: 'high-gray');
+$color-primary: map-get($map: $colors, $key: 'beige');
+$color-high-primary: map-get($map: $colors, $key: 'high-beige');
+$color-secondary: map-get($map: $colors, $key: 'gray');
+$color-high-secondary: map-get($map: $colors, $key: 'high-gray');
+$color-dark: map-get($map: $colors, $key: 'dark');
+$color-contrast-dark: map-get($map: $colors, $key: 'contrast-dark');
+$color-offer: map-get($map: $colors, $key: 'red-offer');
+$color-light: map-get($map: $colors, $key: 'light');

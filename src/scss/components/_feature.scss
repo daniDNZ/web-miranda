@@ -1,0 +1,94 @@
+@use '../utils/variables';
+
+.features-container {
+  margin-bottom: 175px;
+
+  &--dark {
+    color: white;
+    background-color: variables.$bg-dark;
+
+    padding: 48px 20px;
+    margin-bottom: 60px;
+
+    & .feature {
+      background-color: variables.$bg-contrast-dark;
+
+      margin-bottom: 12px;
+
+      &__number {
+        color: variables.$color-dark;
+
+        right: 12px;
+      }
+    }
+
+    & .swiper-pagination-bullet {
+      background-color: variables.$color-contrast-dark;
+      opacity: 1;
+    }
+  }
+}
+
+.feature {
+  height: 360px;
+  width: 100%;
+  text-align: start;
+
+  padding: 81px 38px;
+
+  position: relative;
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: 38px;
+
+    position: relative;
+
+    &--one {
+      background-image: url('/svg/features/icon-1.svg');
+    }
+
+    &--two {
+      background-image: url('/svg/features/icon-2.svg');
+    }
+
+    &--three {
+      background-image: url('/svg/features/icon-3.svg');
+    }
+
+    &--four {
+      background-image: url('/svg/features/icon-4.svg');
+    }
+
+    &--five {
+      background-image: url('/svg/features/icon-5.svg');
+    }
+
+    &--six {
+      background-image: url('/svg/features/icon-6.svg');
+    }
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 130px;
+    color: rgba(34, 34, 34, 0.04);
+
+    position: absolute;
+    right: 32px;
+    top: 0;
+  }
+
+  &__h4 {
+    margin-bottom: 28px;
+  }
+
+  &__p {
+    margin-bottom: 33px;
+  }
+}

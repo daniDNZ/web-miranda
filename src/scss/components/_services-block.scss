@@ -1,0 +1,13 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.services-block {
+
+  &__ul {
+    max-height: 288px;
+    line-height: 48px;
+    color: variables.$color-secondary;
+
+    @include mixins.flexbox(column, wrap, flex-start, 0px);
+  }
+}

@@ -1,0 +1,88 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.amenities-container {
+
+  padding-bottom: 44px;
+
+  @include mixins.grid(2, 18px, 17px);
+
+  &--offer {
+    padding-bottom: 25px;
+  }
+}
+
+.amenitie {
+
+  &__name {
+    color: variables.$color-secondary;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-right: 10px;
+
+    display: inline-block;
+
+    &--ac {
+      background-image: url('/svg/amenities/ac.svg');
+    }
+
+    &--bed {
+      background-image: url('/svg/amenities/bed.svg');
+    }
+
+    &--breakfast {
+      background-image: url('/svg/amenities/breakfast.svg');
+    }
+
+    &--cleaning {
+      background-image: url('/svg/amenities/cleaning.svg');
+    }
+
+    &--expert {
+      background-image: url('/svg/amenities/expert.svg');
+    }
+
+    &--grocery {
+      background-image: url('/svg/amenities/grocery.svg');
+    }
+
+    &--key {
+      background-image: url('/svg/amenities/key.svg');
+    }
+
+    &--kitchen {
+      background-image: url('/svg/amenities/kitchen.svg');
+    }
+
+    &--security {
+      background-image: url('/svg/amenities/security.svg');
+    }
+
+    &--shop {
+      background-image: url('/svg/amenities/shop.svg');
+    }
+
+    &--shower {
+      background-image: url('/svg/amenities/shower.svg');
+    }
+
+    &--support {
+      background-image: url('/svg/amenities/support.svg');
+    }
+
+    &--towels {
+      background-image: url('/svg/amenities/towels.svg');
+    }
+
+    &--wifi {
+      background-image: url('/svg/amenities/wifi.svg');
+    }
+  }
+
+}

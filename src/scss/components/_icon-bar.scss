@@ -1,0 +1,54 @@
+@use '../utils/mixins';
+
+.icon-bar {
+  width: 256px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+
+  margin: 0 auto -20px auto;
+  padding: 16px 15px;
+
+  @include mixins.flexbox(row, nowrap, space-between, 0px);
+  position: relative;
+  z-index: 100;
+
+  &--bottom {
+    margin: -20px auto 28px auto;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--ac {
+      background-image: url('/svg/icon-bar/ac.svg');
+    }
+
+    &--bar {
+      background-image: url('/svg/icon-bar/bar.svg');
+    }
+
+    &--bed {
+      background-image: url('/svg/icon-bar/bed.svg');
+    }
+
+    &--car {
+      background-image: url('/svg/icon-bar/car.svg');
+    }
+
+    &--gym {
+      background-image: url('/svg/icon-bar/gym.svg');
+    }
+
+    &--nosmoke {
+      background-image: url('/svg/icon-bar/nosmoke.svg');
+    }
+
+    &--wifi {
+      background-image: url('/svg/icon-bar/wifi.svg');
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use '../utils/variables';
+
+.button {
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: white;
+  background-color: variables.$color-high-primary;
+
+  padding: 22px 46px;
+
+  display: block;
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid variables.$color-secondary;
+  }
+}

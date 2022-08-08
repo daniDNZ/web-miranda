@@ -1,0 +1,91 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.about-intro {
+
+  &__video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: variables.$color-high-secondary;
+
+    margin-bottom: 36px;
+    margin-top: 60px;
+  }
+
+  &__p {
+    font-family: variables.$font-title;
+    font-size: 32px;
+    line-height: 39.55px;
+    letter-spacing: -1.16px;
+    text-align: center;
+
+    margin-bottom: 51px;
+  }
+
+  &__features {
+    @include mixins.flexbox(row, wrap, space-between, 0);
+  }
+}
+
+.about-feature {
+  width: 158px;
+  height: 158px;
+  text-align: center;
+  color: variables.$color-dark;
+
+  padding: 43px 0 40px;
+
+  &:hover {
+    color: white;
+    background-color: variables.$color-high-primary;
+
+    & .about-feature__icon--breakfast {
+      background-image: url('/svg/about-features/breakfast-white.webp');
+    }
+
+    & .about-feature__icon--plane {
+      background-image: url('/svg/about-features/plane-white.svg');
+    }
+
+    & .about-feature__icon--map {
+      background-image: url('/svg/about-features/map-white.svg');
+    }
+
+    & .about-feature__icon--room {
+      background-image: url('/svg/about-features/room-white.svg');
+    }
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin: 0 auto 12px auto;
+
+    &--breakfast {
+      background-image: url('/svg/about-features/breakfast.svg');
+    }
+
+    &--plane {
+      background-image: url('/svg/about-features/plane.webp');
+    }
+
+    &--map {
+      background-image: url('/svg/about-features/map.svg');
+    }
+
+    &--room {
+      background-image: url('/svg/about-features/room.svg');
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+  }
+}

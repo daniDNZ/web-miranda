@@ -1,0 +1,32 @@
+@use '../utils/variables';
+
+.offer {
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: variables.$bg-light;
+
+    margin-bottom: 16px;
+
+    position: relative;
+  }
+
+  &__previous-price {
+    margin-bottom: 50px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+
+  &__new-price {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+}

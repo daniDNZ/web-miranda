@@ -1,0 +1,58 @@
+@use '../utils/mixins';
+@use '../utils/variables';
+
+.social-row {
+  @include mixins.flexbox(row, nowrap, flex-start, 10px);
+
+  &__a {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      background-color: variables.$color-primary;
+    }
+
+    &--be {
+      background-image: url('/svg/social/be-icon.svg');
+
+      &:hover {
+        background-image: url('/svg/social/be-icon-white.svg');
+      }
+    }
+
+    &--fb {
+      background-image: url('/svg/social/fb-icon.svg');
+
+      &:hover {
+        background-image: url('/svg/social/fb-icon-white.svg');
+      }
+    }
+
+    &--in {
+      background-image: url('/svg/social/in-icon.svg');
+
+      &:hover {
+        background-image: url('/svg/social/in-icon-white.svg');
+      }
+    }
+
+    &--tw {
+      background-image: url('/svg/social/tw-icon.svg');
+
+      &:hover {
+        background-image: url('/svg/social/tw-icon-white.svg');
+      }
+    }
+
+    &--yt {
+      background-image: url('/svg/social/yt-icon.svg');
+
+      &:hover {
+        background-image: url('/svg/social/yt-icon-white.svg');
+      }
+    }
+  }
+
+}
