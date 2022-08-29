@@ -75,7 +75,7 @@
             class="contact-block__item-subtitle contact-block__item-subtitle--contact-page">jobs.webmail@mail.com</span>
         </div>
       </div>
-      <div class="contact-block__image"></div>
+      <div id="map" class="contact-block__image"></div>
     </section>
     <section class="section px-20">
       <form class="contact-form">
@@ -168,7 +168,11 @@
     </div>
   </footer>
   <script src="../main.js" type="module"></script>
+  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+  <script src="../js/maps.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWATWoVGP9wDUC-sKqZfrhpgO-NpSuypc&callback=initMap"></script>
 </body>
 
 </html>
