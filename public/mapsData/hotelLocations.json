@@ -1,0 +1,38 @@
+[
+  {
+    "lat": 40.343842,
+    "lng": -3.535011,
+    "name": "Madrid Rivas",
+    "com": 12
+  },
+  {
+    "lat": 40.521674,
+    "lng": -3.893890,
+    "name": "Madrid Las Rozas",
+    "com": 12
+  },
+  {
+    "lat": 43.360375,
+    "lng": -5.864966,
+    "name": "Asturias Oviedo",
+    "com": 2
+  },
+  {
+    "lat": 43.539885,
+    "lng": -5.668798,
+    "name": "Asturias Gijón",
+    "com": 2
+  },
+  {
+    "lat": 41.405147,
+    "lng": 2.203980,
+    "name": "Barcelona Poblenou",
+    "com": 8
+  },
+  {
+    "lat": 41.409610,
+    "lng": 2.159427,
+    "name": "Barcelona Gracia",
+    "com": 8
+  }
+]

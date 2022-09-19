@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/styles.css">
   <title>Hotel Miranda - New Details</title>
+  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+  <script src="../js/maps.js" type="module"></script>
 </head>
 
 <body>
@@ -43,7 +45,7 @@
           class="breadcrumb__current">Contact</span>
       </div>
     </section>
-    <section class="section px-20">
+    < class="section px-20">
       <div class="contact-block__item contact-block__item--contact-page">
         <span class="contact-block__number">01</span>
         <div class="contact-block__icon contact-block__icon--map"></div>
@@ -75,33 +77,40 @@
             class="contact-block__item-subtitle contact-block__item-subtitle--contact-page">jobs.webmail@mail.com</span>
         </div>
       </div>
-      <div class="contact-block__image"></div>
-    </section>
-    <section class="section px-20">
-      <form class="contact-form">
-        <div class="contact-form__input-group">
-          <input type="text" id="fullName" class="contact-form__input" placeholder="Your full name">
-          <i class="contact-form__input-icon contact-form__input-icon--person"></i>
-        </div>
-        <div class="contact-form__input-group">
-          <input type="tel" id="phone" class="contact-form__input" placeholder="Add phone number">
-          <i class="contact-form__input-icon contact-form__input-icon--phone"></i>
-        </div>
-        <div class="contact-form__input-group">
-          <input type="email" id="email" class="contact-form__input" placeholder="Enter mail address">
-          <i class="contact-form__input-icon contact-form__input-icon--mail"></i>
-        </div>
-        <div class="contact-form__input-group">
-          <input type="text" id="subject" class="contact-form__input" placeholder="Enter subject">
-          <i class="contact-form__input-icon contact-form__input-icon--book"></i>
-        </div>
-        <div class="contact-form__input-group">
-          <textarea id="message" class="contact-form__textarea" rows="10" placeholder="Enter message"></textarea>
-          <i class="contact-form__input-icon contact-form__input-icon--pencil"></i>
-        </div>
-        <button class="button contact-form__button">Send</button>
-      </form>
-    </section>
+      <label for="comunidadAutonoma">Filtrar por Comunidad Autónoma: </label>
+      <select name="comunidadAutonoma" id="comunidadAutonoma" class="contact-form__input">
+        <option value="all">All</option>
+      </select>
+      <div id="map" class="contact-block__image"></div>
+      <input type="text" id="stringAddress" class="contact-form__input" placeholder="Address"></input>
+      <button class="button" id="findNearestLocationButton">Find my nearest location</button>
+      <ul id="nearestLocationsList"></ul>
+      </section>
+      <section class="section px-20">
+        <form class="contact-form">
+          <div class="contact-form__input-group">
+            <input type="text" id="fullName" class="contact-form__input" placeholder="Your full name">
+            <i class="contact-form__input-icon contact-form__input-icon--person"></i>
+          </div>
+          <div class="contact-form__input-group">
+            <input type="tel" id="phone" class="contact-form__input" placeholder="Add phone number">
+            <i class="contact-form__input-icon contact-form__input-icon--phone"></i>
+          </div>
+          <div class="contact-form__input-group">
+            <input type="email" id="email" class="contact-form__input" placeholder="Enter mail address">
+            <i class="contact-form__input-icon contact-form__input-icon--mail"></i>
+          </div>
+          <div class="contact-form__input-group">
+            <input type="text" id="subject" class="contact-form__input" placeholder="Enter subject">
+            <i class="contact-form__input-icon contact-form__input-icon--book"></i>
+          </div>
+          <div class="contact-form__input-group">
+            <textarea id="message" class="contact-form__textarea" rows="10" placeholder="Enter message"></textarea>
+            <i class="contact-form__input-icon contact-form__input-icon--pencil"></i>
+          </div>
+          <button class="button contact-form__button">Send</button>
+        </form>
+      </section>
   </main>
   <footer class="footer">
     <a href="/" class="logo logo--footer">
@@ -169,6 +178,8 @@
   </footer>
   <script src="../main.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWATWoVGP9wDUC-sKqZfrhpgO-NpSuypc&callback=initMap"></script>
 </body>
 
 </html>
