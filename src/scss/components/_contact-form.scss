@@ -11,7 +11,7 @@
     background-color: variables.$bg-light;
 
     margin-bottom: 16px;
-    padding-left: 52px;
+    padding: 0 52px;
 
     &::placeholder {
       font-size: 16px;
@@ -70,7 +70,7 @@
   }
 
   &__button {
-    width: calc(100% - 60px);
+    width: 100%;
 
     margin: 0 auto;
   }

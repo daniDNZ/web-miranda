@@ -1119,6 +1119,7 @@ body {
   width: 100%;
   aspect-ratio: 16/9;
   background-color: #f9f9f9;
+  margin-bottom: 20px;
 }
 
 .legal-block {
@@ -1425,7 +1426,7 @@ body {
   height: 67px;
   background-color: #f9f9f9;
   margin-bottom: 16px;
-  padding-left: 52px;
+  padding: 0 52px;
 }
 .contact-form__input::placeholder {
   font-size: 16px;
@@ -1471,8 +1472,14 @@ body {
   color: #777777;
 }
 .contact-form__button {
-  width: calc(100% - 60px);
+  width: 100%;
   margin: 0 auto;
+}
+
+.map-list__li {
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+  padding: 20px;
+  margin: 20px auto;
 }
 
 .show {

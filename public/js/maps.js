@@ -220,7 +220,6 @@ function configureMatrixService(origin, destinations) {
 
   function listNearestLocations(response, status) {
     if (status === 'OK') {
-
       const locationsUl = document.querySelector('#nearestLocationsList');
       locationsUl.innerHTML = '';
       const nearestLocations = makeList(response);
@@ -228,6 +227,7 @@ function configureMatrixService(origin, destinations) {
       nearestLocations.sort((a, b) => a.durationValue - b.durationValue);
       nearestLocations.forEach(location => {
         const li = document.createElement('li');
+        li.classList.add('map-list__li');
         li.textContent = `${location.duration} - ${location.distance} - ${location.to}`;
         locationsUl.appendChild(li);
       }

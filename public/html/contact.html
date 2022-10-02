@@ -77,16 +77,17 @@
             class="contact-block__item-subtitle contact-block__item-subtitle--contact-page">jobs.webmail@mail.com</span>
         </div>
       </div>
-      <label for="comunidadAutonoma">Filtrar por Comunidad Autónoma: </label>
-      <select name="comunidadAutonoma" id="comunidadAutonoma" class="contact-form__input">
-        <option value="all">All</option>
-      </select>
-      <div id="map" class="contact-block__image"></div>
-      <input type="text" id="stringAddress" class="contact-form__input" placeholder="Address"></input>
-      <button class="button" id="findNearestLocationButton">Find my nearest location</button>
-      <ul id="nearestLocationsList"></ul>
       </section>
-      <section class="section px-20">
+      <section class="section">
+        <select name="comunidadAutonoma" id="comunidadAutonoma" class="contact-form__input">
+          <option value="all">All</option>
+        </select>
+        <div id="map" class="contact-block__image"></div>
+        <input type="text" id="stringAddress" class="contact-form__input" placeholder="Address"></input>
+        <button class="button" id="findNearestLocationButton">Find my nearest location</button>
+        <ul id="nearestLocationsList" class="map-list"></ul>
+      </section>
+      <section class="section">
         <form class="contact-form">
           <div class="contact-form__input-group">
             <input type="text" id="fullName" class="contact-form__input" placeholder="Your full name">
